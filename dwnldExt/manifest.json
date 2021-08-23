@@ -1,0 +1,14 @@
+{
+    "name": "Simple Youtube Downloader Extension",
+    "description": "download youtube videos simpler than traditional way",
+    "version":"0.1",
+    "author":"Gabriel Noghryan",
+    "web_accessible_resources" : ["src/youtubedl.js"],
+    "manifest_version": 2,
+    "content_scripts":[
+        {
+            "matches":["https://www.youtube.com/watch*"],
+            "js": ["src/loader.js"]
+        }
+    ]
+}
